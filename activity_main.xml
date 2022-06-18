@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#DD2C00">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="User name"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:tint="#fff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="Logout"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:src="@drawable/ic_baseline_search_24"
+            android:id="@+id/logout"
+            android:tint="#fff" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Java Clases"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:background="#D51010"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="0dp"
+        android:textStyle="bold"
+        android:id="@+id/txtv_title"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtv_title"
+        android:id="@+id/liner_1"
+        android:backgroundTint="#40C4FF"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Implicit Intent"
+            android:background="#00838F"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/im_intent_btn"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#C62828"
+            android:text="Grid Veiw"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/gird_btn"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/liner_1"
+        android:id="@+id/linear_2"
+        android:backgroundTint="#40C4FF"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Card view"
+            android:background="#D50000"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_card_view"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#AA00FF"
+            android:text="Recycler view"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/recycle_view"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_2"
+        android:id="@+id/linear_3"
+        android:backgroundTint="#40C4FF"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="background serivce"
+            android:background="#D50000"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_service"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#AA00FF"
+            android:text="shared prefrences"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/shared_pref"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_3"
+        android:id="@+id/linear_4"
+        android:backgroundTint="#40C4FF"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="SQLITE"
+            android:background="#D50000"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/sqlite"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#AA00FF"
+            android:text="Web view"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/webview"
+            />
+
+    </LinearLayout>
+
+    
+
+
+
+
+
+</RelativeLayout>
